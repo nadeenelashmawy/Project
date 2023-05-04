@@ -1,0 +1,58 @@
+<html>
+<head>
+<title> Nadeen Al-Ashmawy </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center><img src="logo.jpg" width="250px" height="150px">
+<h1> Nadeen's Libirary </h1></center>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'arabic')">Arabic Books</button>
+  <button class="tablinks" onclick="openCity(event, 'english')">English Books</button>
+  <button class="tablinks" onclick="openCity(event, 'others')">Both Arabic + English</button>
+</div>
+
+<div id="arabic" class="tabcontent">
+  <h3>Arabic Books</h3>
+  <a href="1.pdf"><img src="1.png" width="200px" height="200px"></a><hr>
+  <a href="2.pdf"><img src="2.png" width="200px" height="200px"></a><hr>
+  <a href="3.pdf"><img src="3.png" width="200px" height="200px"></a><hr>
+  <a href="4.pdf"><img src="4.png" width="200px" height="200px"></a><hr>
+  <a href="5.pdf"><img src="5.png" width="200px" height="200px"></a><hr>
+</div>
+<div id="english" class="tabcontent">
+  <h3>English Books</h3>
+  <a href="6.pdf"><img src="6.png" width="200px" height="200px"></a><hr>
+  <a href="7.pdf"><img src="7.png" width="200px" height="200px"></a><hr>
+  <a href="8.pdf"><img src="8.png" width="200px" height="200px"></a><hr>
+  <a href="9.pdf"><img src="9.png" width="200px" height="200px"></a><hr>
+</div>
+<div id="others" class="tabcontent">
+  <h3>Both Arabic + English</h3>
+  <a href="1.pdf"><img src="1.png" width="200px" height="200px"></a><hr>
+  <a href="2.pdf"><img src="2.png" width="200px" height="200px"></a><hr>
+  <a href="3.pdf"><img src="3.png" width="200px" height="200px"></a><hr>
+  <a href="4.pdf"><img src="4.png" width="200px" height="200px"></a><hr>
+  <a href="5.pdf"><img src="5.png" width="200px" height="200px"></a><hr>
+  <a href="6.pdf"><img src="6.png" width="200px" height="200px"></a><hr>
+  <a href="7.pdf"><img src="7.png" width="200px" height="200px"></a><hr>
+  <a href="8.pdf"><img src="8.png" width="200px" height="200px"></a><hr>
+  <a href="9.pdf"><img src="9.png" width="200px" height="200px"></a><hr>
+</div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
